@@ -1,0 +1,8 @@
+#multi div.content {
+   background: url('/home/mauricio/.config/LightTable/User/command.jpg') no-repeat;
+   background-size: cover;
+}
+
+.CodeMirror {
+  background-color: rgba(0,0,0, 0.4) !important;
+}

@@ -1,0 +1,30 @@
+;; Your file has been converted to the new flat format.
+;; Conversion does not preserve comments or indentation.
+;; File is backed up at /home/mauricio/.config/LightTable/User/user.keymap.bak
+[
+  [:editor "alt-shift-w" :editor.watch.unwatch]
+  [:editor "alt-w" :editor.watch.watch-selection]
+  [:app "ctrl-shift-p" :show-commandbar-transient]
+
+  [:app "ctrl-h" :workspace.show]
+  [:editor "ctrl-shift-c" :clear-inline-results]
+
+  [:app "alt-left" :tabs.prev]
+  [:app "alt-right" :tabs.next]
+
+  [:editor "ctrl-t" :lt.plugins.clj-test-helper/run-clojure-tests]
+
+  ; Multi-cursor
+  [:editor "alt-shift-up" (:editor.sublime.selectLinesUpward)]
+  [:editor "alt-shift-down" (:editor.sublime.selectLinesDownward)]
+
+  [:editor "ctrl-shift-t" (:eval-custom
+                            "(clojure.test/run-all-tests
+                               (re-pattern
+                                (str \"^\" *ns* \".*\")))"
+                           {:result-type :statusbar})]
+
+  [:editor "ctrl-r" (:eval.custom "(lt.objs.popup/popup! {})")]
+;                     :eval.custom
+ ;                        "(str (quote __SELECTION__ ))")]
+]
