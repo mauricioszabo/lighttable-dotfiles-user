@@ -15,5 +15,5 @@
  [:editor :lt.objs.langs.ruby/use-rvm]
  [:editor :lt.objs.editor/line-numbers]
 
-
+ ; Clojure
  [:editor.clojure :lt.plugins.clojure/print-length 1000]]
