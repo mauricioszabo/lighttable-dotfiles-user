@@ -22,6 +22,8 @@
   [:editor "alt-shift-up" (:editor.sublime.selectLinesUpward)]
   [:editor "alt-shift-down" (:editor.sublime.selectLinesDownward)]
 
+  [:editor "ctrl-shift-q" (:console-tab)]
+
   [:editor "ctrl-shift-t" (:eval-custom
                             "(clojure.test/run-all-tests
                                (re-pattern
